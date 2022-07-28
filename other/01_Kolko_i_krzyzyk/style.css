@@ -1,0 +1,129 @@
+body
+{
+	background-color: #3e3e42;
+	color: lightgray;
+	font-size: 28px;	
+	
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#container
+{
+	background-color: #54a0ad;
+	width: 1200px;
+	min-height: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+
+#game
+{
+	float: left;
+	width: 650px;
+}
+
+#board
+{
+	width: 490px;
+	margin-left: auto;
+	margin-right: auto;
+	//margin-top: 100px;
+	
+	margin-top: 50px;
+}
+
+#line
+{
+	float: left;
+	width: 10px;
+	height: 600px;
+	background-color: black;
+}
+
+#panel
+{
+	float: left;
+	width: 540px;
+	height: 550px;
+	margin-top: 50px;
+}
+
+#title
+{
+	height: 165px;
+	text-align: center;
+	margin-right: auto;
+	background-color: #070052;
+	padding-top: 25px;
+	
+	color: #ff7700;
+	font-size: 120px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 700;
+	
+}
+
+#restart
+{
+	height: 120px;
+	text-align: center;
+	margin-top: 30px;
+	
+	color: #780006;
+	font-size: 40px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 700;
+}
+
+#restart:hover
+{
+	height: 150px;
+	margin-top: 0px;
+	font-size: 60px;
+	color: #cc020c;
+}
+
+#info
+{
+	height: 181px;
+	text-align: center;
+	
+	color: black;
+	font-size: 60px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 700;
+	
+}
+
+#akt
+{
+	width: 150px;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+.cell
+{
+	float: left;
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-bottom: 0px;
+	padding-top: 6px;
+	cursor: pointer;
+	
+	min-height: 156px;
+	min-width: 150px;
+}
+
+.cell:hover
+{
+	background-color: #ffffff;
+	color: white;
+	// border: 3px solid white;
+}

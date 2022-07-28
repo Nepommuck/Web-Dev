@@ -1,0 +1,93 @@
+:root {
+    --prop: calc(7/3);
+    --hei: 7vh;
+    --button_wid: calc(
+        var(--prop) * var(--hei)
+    );
+    --button_marg: calc(
+        var(--button_wid) / 30
+    );
+    --bord: calc(
+        var(--button_wid) / 60
+    );
+    --rad: calc(
+        var(--button_wid) / 20
+    );
+    --pad: calc(
+        var(--button_wid) / 60
+    )
+}
+
+#contenainer {
+    width: calc(
+        4 * var(--button_wid) + 8 * var(--button_marg)
+    );
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: calc(
+        0.7 * var(--hei)
+    );
+}
+
+#inp, #result {
+    /* height: 40px; */
+    width: calc(
+        4 * var(--button_wid) + 1 * var(--button_marg)
+    );
+    /* font-size: large; */
+    font-size: var(--hei);
+    /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  */
+    /* font-family:monospace; */
+
+    margin: var(--button_marg);
+    padding: calc(
+        2 * var(--button_marg)
+    );
+
+    border: var(--bord) solid gray;
+    border-radius: var(--rad);
+}
+
+#result:hover {
+    cursor: auto;
+}
+
+.but {
+    font-size: var(--hei);
+    height: calc(
+        var(--hei) + 2 * var(--bord) + 2 * var(--pad) + 2 * var(--button_marg)
+    );
+    width: var(--button_wid);
+    margin: var(--button_marg);
+
+    padding: var(--pad) 0px var(--pad) 0px;
+
+    border: var(--bord) solid gray;
+    border-radius: var(--rad);
+
+    /* overflow: scroll; */
+}
+
+.but:hover {
+    cursor: pointer;
+    background-color: rgb(207, 207, 207);
+    border-color: black;
+}
+
+/* Double buttons */
+#but2, #but21 {
+    width: calc(
+        2 * var(--button_wid) + 2 * var(--button_marg)
+    );
+}
+
+#but2 {
+    font-size: calc(
+        0.85 * var(--hei)
+    );
+}
+
+/* #result {
+    font-size: 5vh;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+} */

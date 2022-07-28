@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#background {
+    background-color: rgb(22, 17, 17);
+    min-height: 100vh;
+}
+
+#container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    background-color: rgb(119, 109, 109); /*
+    min-height: 960px; */
+    min-height: 820px;
+}
+
+#window {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    background-color: rgb(0, 0, 0);
+    max-width: 860px;
+    min-height: 559px;
+}
+
+#left {
+    width: 241px;
+    height: 479px;
+    background-image: url("space_sky2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(46, 2, 97); 
+
+    border: 20px solid rgb(99, 4, 4); 
+    float: left;
+    margin: 20px;
+}
+
+#left:hover {
+    background-image: url("space_sky_falisz.jpg");
+    cursor: not-allowed;
+    border: 20px solid rgb(189, 0, 0); 
+}
+
+#right:hover {
+    border: 20px solid rgb(189, 0, 0); 
+}
+
+#right {
+    width: 479px;
+    height: 479px;
+    border: 20px solid rgb(99, 4, 4);  
+    float: left;
+    margin: 20px;
+    margin-left: 0px;
+}
+
+.box {
+    width: 133px;
+    height: 133px;
+    background-color: rgb(155, 8, 57); 
+    border: 10px solid rgb(151, 103, 0);
+    float: left;
+}
+
+.box:hover {
+    background-image: url("question.png");
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: center;
+
+    background-color: rgb(135, 0, 37); 
+    border: 10px solid rgb(246, 250, 9);
+    cursor: pointer;
+}
+
+#box_holder {
+    border: 10px solid rgb(151, 103, 0);
+    min-height: 459px;
+}
+
+#upp_text {
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 50px;
+    padding-bottom: 50px; /*
+    background-color: rgb(42, 5, 110); */
+    width: fit-content;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*
+a:visited {
+    color: #ff0000;
+    text-decoration: none;
+}
+*/
+a:link {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: rgb(245, 236, 70);
+  }
+  
+  a:active {
+    text-decoration: none;
+    color: rgb(214, 16, 16);
+  }
