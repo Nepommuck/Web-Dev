@@ -4,6 +4,14 @@
     margin-right: auto;
 }
 
+/* #red_slider {
+    -webkit-appearance: none;
+    background:rgb(255, 0, 0);
+    height: 10px;
+    width: 200px;
+    border-radius: 10px;
+} */
+
 #add {
     font-size: 20px;
     margin: 15px;
