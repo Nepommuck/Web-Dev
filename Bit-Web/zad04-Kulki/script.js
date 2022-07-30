@@ -77,7 +77,7 @@ function darken(elem, nr, timer, colors, change, radius) {
 
 
 function main() {
-    for (let i=0; i<30; i++)
-        add_box()
+    // for (let i=0; i<30; i++)
+    //     add_box()
     document.getElementById("add").setAttribute("onclick", "add_box()")
 }
