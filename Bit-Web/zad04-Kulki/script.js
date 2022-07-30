@@ -21,10 +21,12 @@ let MAX_RADIUS = 55
 
 
 function add_box() {
+    let val = document.getElementById("red_slider").value
+    console.log(val)
     if (active_counter <= 0) {
-        // let new_html = document.getElementById("container").innerHTML
+        // let new_html = document.getElementById("boxholder").innerHTML
         let new_html = '<div class="box" id="box'+box_counter+'" onclick="click_box('+box_counter+')"></div>'
-        document.getElementById("container").innerHTML += new_html
+        document.getElementById("boxholder").innerHTML += new_html
         box_counter += 1
     }
 }
@@ -35,13 +37,13 @@ function click_box(nr) {
         elem = document.getElementById('box' + nr)
         elem.style.backgroundColor = 'rgb(255, 0, 0)'
                 
-        color[nr][0] = 255
-        color[nr][1] = 0
-        color[nr][2] = 0
+        color[nr][0] = document.getElementById("red_slider").value
+        color[nr][1] = document.getElementById("green_slider").value
+        color[nr][2] = document.getElementById("blue_slider").value
 
-        eee[nr][0] = 255 / TICKS
-        eee[nr][1] = 0
-        eee[nr][2] = 0
+        eee[nr][0] = color[nr][0] / TICKS
+        eee[nr][1] = color[nr][1] / TICKS
+        eee[nr][2] = color[nr][2] / TICKS
 
         rad[nr] = MAX_RADIUS
         let timer = TICKS
@@ -75,5 +77,7 @@ function darken(elem, nr, timer, colors, change, radius) {
 
 
 function main() {
+    // for (let i=0; i<30; i++)
+    //     add_box()
     document.getElementById("add").setAttribute("onclick", "add_box()")
 }

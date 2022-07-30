@@ -8,10 +8,16 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
-<body onload="main()">
+<body onload="main()">    
     <div id="container">
+        <input id="red_slider" class="slider" type="range" min="0" max="255" value="60">
+        <input id="green_slider" class="slider" type="range" min="0" max="255" value="180">
+        <input id="blue_slider" class="slider" type="range" min="0" max="255" value="60">
         <button id="add">Dodaj</button><br>
-        <!-- <div class="box"></div> -->
+
+        <div id = "boxholder">
+            <!-- <div class="box"></div> -->
+        </div>
     </div>
 </body>
 </html>
