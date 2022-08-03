@@ -1,0 +1,17 @@
+:root {
+    --size: min(90vw, 80vh)
+}
+
+canvas {
+    border: 1px solid black;
+    height: var(--size);
+    width: var(--size);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#container {
+    width: var(--size);
+    margin-left: auto;
+    margin-right: auto;
+}
